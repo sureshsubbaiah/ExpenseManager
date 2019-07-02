@@ -10,7 +10,7 @@ class YearTabsRouter extends React.Component {
   render() {
     const link = '/?month=All&year=' + this.props.year;
     return (
-      <a href={link}> <p style={this.state.style}>{this.props.year} </p> </a>
+      <a href={link}> <p style={this.state.style}> {this.props.year} </p> </a>
     );
     // <Link to={{ pathname: '/', search: '/?month=All&year=' + this.props.year }}>
     //   <p style={this.state.style}>{this.props.year} </p>
