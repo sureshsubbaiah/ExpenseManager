@@ -1,4 +1,4 @@
-# ExpenseManager
+# ExpenseManager APIs
 
 Spring Boot application with Mongodb database and React Frontend.
 
