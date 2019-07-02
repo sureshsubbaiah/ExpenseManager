@@ -10,4 +10,13 @@ Building Docker Image for ExpenseManager APIs
 `docker build -t expensemanager .`
 
 Creating ExpenseManager APIs Container  
-`docker run -it --name expensemanager -p 8080:8080 -rm <ImageName>`
+`docker run -it --name expensemanager -p 8080:8080 --rm <ImageName>`
+
+# FrontEnd App
+
+`cd expense-manager`
+Building Docker Image for Frontend app  
+`docker build -t expensemanagerreact .`
+
+Creating Frontend app container  
+`docker run --name frontendapp -p 3001:3000 -d --rm <ImageName>`
