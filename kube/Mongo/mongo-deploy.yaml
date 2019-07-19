@@ -28,9 +28,9 @@ spec:
         role: mongo # has to match .spec.selector.matchLabels
     spec:
       volumes:
-        - name: task-pv-storage
+      - name: mongo-persistent-storage
         persistentVolumeClaim:
-          claimName: task-pv-claim
+         claimName: task-pv-claim
       containers:
         - name: mongo
           image: mongo
